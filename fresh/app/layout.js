@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
           <Link href="list">List</Link>
           <Link href="chart">Chart</Link>
           <Link href="today">Today</Link>
+          <Link href="cart">Cart</Link>
         </div>
         {children}
       </body>

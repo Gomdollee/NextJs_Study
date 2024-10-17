@@ -1,3 +1,6 @@
+import Image from "next/image"
+import techImg from '/public/tech0.jpg'
+
 export default function List() {
     let goods = ['Tomatoes', 'Pasta', 'Coconut']
     // let array = [2,3,4]
@@ -12,7 +15,7 @@ export default function List() {
             goods.map((a, i) => {
                 return (
                 <div className="food" key={i}>
-                    <img src="/tech.jpg"></img>
+                    <img src={`/tech${i}.jpg`} className="tech-img"/>
                     <h4>{goods[i]} $20</h4>
                   </div>
                 )
