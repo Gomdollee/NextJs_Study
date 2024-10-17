@@ -11,7 +11,8 @@ export default function List() {
         {
             goods.map((a, i) => {
                 return (
-                <div className="food">
+                <div className="food" key={i}>
+                    <img src="/tech.jpg"></img>
                     <h4>{goods[i]} $20</h4>
                   </div>
                 )
